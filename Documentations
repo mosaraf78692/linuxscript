@@ -1,0 +1,8 @@
+Make Sure SSH have to install in system
+
+This script will syncronize data from host to guest or guest to host (including aws instance/server also)
+
+Currentlly this script can find the aws instance .pem key from Downloads folder, Key should be there for propar executions
+
+This scipt can generate ssh public key ro assign to the server's authorized_keys file.
+
