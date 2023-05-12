@@ -1,6 +1,16 @@
+Family belongs to ====    'Techgenies' or 'techgenies'
+
+
 Make Sure SSH have to install in system
 
-This script will syncronize data from host to guest or guest to host (including aws instance/server also)
+
+This script bility to do :-
+
+Create Users
+Delete Users 
+Change HostName
+syncronize data from host to guest or guest to host (including aws instance/server also)
+
 
 Currentlly this script can find the aws instance .pem key from Downloads folder, Key should be there for propar executions
 
