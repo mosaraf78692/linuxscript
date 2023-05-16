@@ -1,0 +1,44 @@
+* These are the tools have to be installed both side to work ths script
+
+Tools:-
+1> ssh
+
+ubuntu and others linux distributions.
+
+sudo apt-get update
+sudo apt-get upgrade -y
+sudo apt-get install ssh
+sudo apt-get install openssh-server
+sudo systemctl enable ssh && sudo systemctl start ssh
+
+
+centos linux distributions.
+
+sudo yum update
+sudo yum upgrade -y
+sudo yum –y install openssh-server openssh-clientssudo yum enable sshd
+sudo systemctl start sshd   
+sudo systemctl status sshd    ---> To check status is it runnig or what?
+sudo systemctl enable sshd    ---> It's depands on us to keep enable or disable 
+sudo systemctl disable sshd
+
+
+
+2> ftp
+sudo apt-get update
+sudo apt-get install ftp
+
+sudo dnf update
+sudo dnf install vsftpd
+
+
+3> sync ---------->> mostly it's been installed on system ( Recommended to follow this line later )
+
+sudo apt-get update
+sudo apt-get install rsync
+sudo systemctl enable rsync
+sudo systemctl start rsync
+
+
+sudo yum install rsync
+sudo systemctl status rsync

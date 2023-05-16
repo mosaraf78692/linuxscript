@@ -41,9 +41,9 @@ function usercreate(){
 
         # Create the user account with the given username and password
         # sudo useradd -m -p "$(openssl passwd -1 "$password")" "$username"  --> saw error while run it on other linux
-        sudo adduser "$username" --disabled-password --gecos "" && \
-        echo "$username:$password" | sudo chpasswd
-
+        sudo useradd -m -c "$full_name" "$username"
+	echo "$username:$password" | sudo chpasswd
+      
         # Print a message indicating that the user account has been created
         echo "User account '$username' created successfully"
 }
